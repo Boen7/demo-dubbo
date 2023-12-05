@@ -1,0 +1,11 @@
+server:
+  port: 8090
+dubbo:
+  application:
+    name: dubbo-springboot-demo-comsumer
+    qos-port: 3333
+  protocol:
+    name: comsumer
+    port: 50051
+  registry:
+    address: zookeeper://${zookeeper.address:192.168.223.132}:2181
